@@ -1,0 +1,3 @@
+- insert:
+    - id: deepseek-whale-widget
+      name: '@local/dsh-whale-widget'

@@ -1,0 +1,6 @@
+{
+  "meta": {
+    "title": "DeepSeek Whale Cost Widget",
+    "description": "Shows live session cost and opens a panel with account balance, last-round cost, and current workspace total, with dynamically refreshed official CNY pricing and holiday data."
+  }
+}

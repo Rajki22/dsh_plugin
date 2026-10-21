@@ -1,0 +1,27 @@
+# dependencies
+node_modules/
+
+# local tooling and caches
+.tools/
+cache/
+.publish/
+
+# secrets and credentials
+.env
+.env.*
+.github-token*
+*.pem
+*.key
+id_ed25519*
+dsh_plugin_deploy_ed25519*
+
+# temporary and generated files
+*.log
+*.tmp
+*.zst
+*.zstd
+.DS_Store
+Thumbs.db
+
+# local backups
+dsh-whale-widget-backup-*/

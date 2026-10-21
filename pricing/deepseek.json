@@ -1,0 +1,34 @@
+{
+  "source": "DeepSeek API pricing (deepseek-flash / deepseek-v4-pro), CNY per 1M tokens",
+  "currency": "CNY",
+  "unit": "per_million_tokens",
+  "models": {
+    "deepseek-flash": {
+      "provider": "deepseek",
+      "aliases": ["deepseek-v4-flash", "deepseek-v4-flash-vision-exp"],
+      "peak": {
+        "cacheRead": 0.04,
+        "input": 2,
+        "output": 8
+      },
+      "offPeak": {
+        "cacheRead": 0.02,
+        "input": 1,
+        "output": 4
+      }
+    },
+    "deepseek-v4-pro": {
+      "provider": "deepseek",
+      "peak": {
+        "cacheRead": 0.3,
+        "input": 9,
+        "output": 27
+      },
+      "offPeak": {
+        "cacheRead": 0.15,
+        "input": 4.5,
+        "output": 13.5
+      }
+    }
+  }
+}

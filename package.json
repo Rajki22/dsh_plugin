@@ -1,0 +1,62 @@
+{
+  "name": "@local/dsh-whale-widget",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "A DeepSeek whale widget showing live session cost, current turn cost, workspace total cost, and account balance, with dynamic holiday and official CNY pricing refresh.",
+  "license": "MIT",
+  "author": "Rajki22",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Rajki22/dsh_plugin.git"
+  },
+  "homepage": "https://github.com/Rajki22/dsh_plugin#readme",
+  "bugs": {
+    "url": "https://github.com/Rajki22/dsh_plugin/issues"
+  },
+  "keywords": [
+    "dsh",
+    "deepseek",
+    "cost",
+    "widget"
+  ],
+  "exports": {
+    ".": "./index.js",
+    "./client": "./client.js",
+    "./locale/*.json": "./locale/*.json",
+    "./icon": "./assets/deepseek-whale.png"
+  },
+  "files": [
+    "index.js",
+    "client.js",
+    "cache.js",
+    "time.js",
+    "usage.js",
+    "cost.js",
+    "pricing.js",
+    "pricing-source.js",
+    "holidays.js",
+    "pricing/*.json",
+    "holidays/*.json",
+    "scripts/*.mjs",
+    "scripts/fixtures/*.html",
+    "cordis.patch.yml",
+    "locale/*.json",
+    "assets/deepseek-whale.png"
+  ],
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web",
+      "immediately": true,
+      "inject": [
+        "@deepseek-ai/dsh-api-remotes",
+        "@deepseek-ai/dsh-client-locale",
+        "@deepseek-ai/dsh-client-ui-layout",
+        "@deepseek-ai/dsh-client-ui-session"
+      ]
+    }
+  }
+}
