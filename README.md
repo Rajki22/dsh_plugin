@@ -115,7 +115,7 @@ Host 日志：
 [dsh-whale-widget] holiday fetch failed year=2027: ...
 ```
 
-本机从 GitHub raw 抓取失败时会静默使用内置 2024–2026 数据；节假日判断仍然正确。
+GitHub raw 在当前网络不可达时会静默使用内置 2024–2026 数据；节假日判断仍然正确。
 
 ## 本轮消费金额
 
@@ -187,7 +187,7 @@ GET /dsh-whale-widget/cost-reconciliation?sessionId=...
 返回：
 
 - `currentWorkspace`：当前工作区 total/sessionCount；
-- `allLocalWorkspaces`：本机所有工作区，按 sessionId 去重；
+- `allLocalWorkspaces`：本地所有工作区，按 sessionId 去重；
 - `allLocalTotal`：本地所有工作区合计；
 - `otherWorkspaceTotal`：本地其他工作区合计；
 - `currentSession`：当前会话 total/currentTurn；
